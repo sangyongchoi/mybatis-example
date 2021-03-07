@@ -1,0 +1,11 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="test">
+    <insert id="insertTest" parameterType="String">
+        insert into user_info(user_id, user_nm) values(#{userId}, #{userNm})
+    </insert>
+    <select id="selectTest" resultType="user.User">
+        select user_id, user_nm
+        from user_info
+    </select>
+</mapper>
