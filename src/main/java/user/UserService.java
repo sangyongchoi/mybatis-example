@@ -18,4 +18,10 @@ public class UserService {
             return session.selectList("test.selectTest");
         }
     }
+
+    public List<User> selectUserWhenUseSelectAnnotation(){
+        try(SqlSession session = DatabaseSessionFactory.getSqlSession()){
+            return session.selectList("selectUser");
+        }
+    }
 }

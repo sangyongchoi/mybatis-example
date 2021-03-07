@@ -1,7 +1,7 @@
+package user;
+
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import user.User;
-import user.UserService;
 
 import java.util.List;
 

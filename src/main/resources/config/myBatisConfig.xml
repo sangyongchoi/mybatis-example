@@ -19,5 +19,6 @@
     </environments>
     <mappers>
         <mapper resource="config/sql.xml"/>
+<!--        <mapper class="user.UserMapper"/>-->
     </mappers>
 </configuration>
